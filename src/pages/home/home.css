@@ -1,0 +1,67 @@
+.counts-box{
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.viser img{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.vise{
+    padding: 10px;
+}
+
+.display-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .btn-box a{
+    display: block;
+    background-color: #78B5D6;
+    padding: 1rem;
+    border-radius: 28px;
+    color: white !important;
+ }
+.no-gutters{
+    margin-bottom: 2rem;
+}
+
+.clients{
+    margin-top: 3rem;
+}
+
+.viset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.viset svg{
+    margin-right: 6px;
+}
+
+.testimonia{
+    width: 70px;
+    object-fit: cover;
+    height: 70px;
+}
+
+.react-multi-carousel-track li{
+    flex: 1 1 auto;
+    position: relative;
+    width: 200px!important;
+}
+
+.animate__fadeInUpe{
+    color: #78B5D6!important;
+}

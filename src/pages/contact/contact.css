@@ -1,0 +1,112 @@
+.my-5{
+  margin-top: 5rem, impo !important;   
+}
+
+.g-2, .gx-2 {
+     --bs-gutter-x: 4rem!important;
+ }
+ .mb-4{
+     margin-bottom: 3rem!important;
+   } 
+
+   .form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+     height: calc(5rem + 2px)!important;
+     line-height: 1.25;
+ }
+
+ .btnSend{
+     float: right;
+     height: 4rem;
+ }
+
+ .imgs{
+  font-size: 1.5rem;
+  background-color: #ec944b;
+  box-shadow: 0px 1px 4px 1px rgb(62 59 57 / 21%);
+ }
+
+ .btn-block {
+  width: 100%;
+  height: 4rem;
+  background-color: #ec944b;
+  color: black;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+ .contact-wrap {
+  background: #fff;
+}
+
+.info-wrap .dbox .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(0, 0, 0);
+}
+
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+}
+
+.pl-3, .px-3 {
+  padding-left: 1rem !important;
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.contactForm .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+#contactForm .error {
+  color: red;
+  font-size: 12px;
+}
+
+#contactForm .form-control {
+  font-size: 16px;
+}
+
+#contactForm .error {
+  color: red;
+  font-size: 12px;
+}
+
+.contactForm .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.form-control:focus, .form-control:active {
+  border-color: #46b5d1 !important;
+  outline: none;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: none!important;
+}
+
+.labels{
+      font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.2rem 0!important;
+    display: inline-block;
+    position: relative;
+}
+
+.form-control-use{
+  height: 4rem;
+}

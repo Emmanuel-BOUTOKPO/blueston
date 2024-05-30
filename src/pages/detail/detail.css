@@ -1,0 +1,37 @@
+.carousel-img {
+    width: 170px;  
+    height: auto;  
+    margin-right: 10px;  
+    cursor: pointer;  
+    transition: transform 0.2s ease;  
+  }
+  
+  .carousel-img:hover {
+    transform: scale(1.1); 
+  }
+  
+  .carousel-container {
+    margin-bottom: 20px;  
+  }
+  
+  .react-multiple-carousel__arrow {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+  }
+  
+
+  .react-multiple-carousel__arrow--left {
+    left: 10px; 
+  }
+  
+  .react-multiple-carousel__arrow--right {
+    right: 10px; 
+  }
+  
+.titl{
+    text-align: center;
+}
+
+.card{
+    padding: 1rem;
+}

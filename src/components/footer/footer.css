@@ -1,0 +1,13 @@
+.droitReserve{
+     margin-bottom: 0;
+     text-align: center;
+}
+
+.footer {
+     position: relative;
+     padding: 0 5.6rem;
+     margin-top: 4rem;
+     background: #f0f0f0;
+     justify-content: center;
+     height: 10rem;
+ }

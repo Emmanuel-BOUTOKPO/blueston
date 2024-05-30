@@ -1,0 +1,104 @@
+.rows {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+}
+
+ .carousel {
+   margin-bottom: 3rem;
+}  
+
+.carousel-inner {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .a {
+     display: flex !important;
+     justify-content: space-around;
+     align-items: center;
+}  
+
+.space{
+     margin: 0;
+     padding: 0;
+}
+.carousel-item.active:nth-child(2){
+     background:url('../../assets/img/slide/slide-3.jpg'); 
+     background-size: cover;
+     min-height: 70vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.carousel-item.active:nth-child(1) {
+     background: url('../../assets/image13.jpg'); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.carousel-caption {
+     right: 0%!important;
+     bottom: 3rem!important;
+     left: 0!important;
+     padding-top: 0rem!important;
+     padding-bottom: 0rem!important;
+     text-align: center;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-size: 16px;
+     line-height: 30px;
+     text-transform: uppercase;
+}
+
+.p{
+     color: #fff!important;
+     font-family: 'Roboto';
+     font-size: 23px; 
+     font-weight: 700; 
+     letter-spacing: 2px;
+}
+
+.pa{
+     color: #fff!important;
+     font-family: 'Roboto';  
+     padding: 0 7px;
+     font-weight: 700; 
+     text-align: center;
+}
+
+@media (max-width: 600px) {
+     .carousel {
+         min-height: 35vh;
+         background-size: cover;
+     }
+
+     .carousel-item.active:nth-child(2){
+         min-height: 35vh;
+         background-size: cover;
+    }
+    
+    .carousel-item.active:nth-child(1) {
+         min-height: 35vh;
+         background-size: cover;
+    }
+    .carousel-caption {        
+     bottom: 3rem!important;
+}
+
+#vf, .btn-get-starte{
+     display: none!important;
+}
+}
+.btn-get-starte{
+     border: 1px solid #3092b8;
+     padding: 11px;
+     border-radius: 20px;
+     color: #fff!important;
+ }

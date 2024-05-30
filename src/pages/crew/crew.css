@@ -1,0 +1,45 @@
+.adds{
+    margin-bottom: 2rem;
+    margin-top: 7rem!important;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.readTimes {
+    height: 40px;
+    padding: 3px !important;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.lieux{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;  
+        justify-content: space-between;
+        position: absolute;
+        bottom: -40px;
+        margin-bottom: 1rem;
+        right: 0rem;
+    }
+
+    @media screen and (max-width: 992px) {
+        .texts{
+            width: 100%;
+            margin-bottom: 2rem!important;
+        }
+    }  
+
+    @media screen and (min-width: 992px) {
+        input {
+            margin-bottom: 2rem!important;
+            padding: 10px;
+            border: 1px solid lightgray;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+    }
