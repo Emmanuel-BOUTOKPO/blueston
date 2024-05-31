@@ -42,7 +42,13 @@ const Navbar = () => {
             <li>
               <NavLink to="/about" className={isActiveLink('/about') ? 'navigation-menu-active' : ''}>A propos</NavLink>
             </li>
-            {
+            <li>
+                    <NavLink to="/post" className={isActiveLink('/post') ? 'navigation-menu-active' : ''}>Poster un article</NavLink>
+                  </li> 
+                  <li>
+                    <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
+                  </li>
+            {/* {
                (users === null) ?
                   <Outlet /> :
                   (users.status === "ADMIN") ?
@@ -58,11 +64,11 @@ const Navbar = () => {
                     <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
                   </li> :
                      <Outlet />
-            }
+            } */}
             <li>
               <NavLink to="/contact" className={isActiveLink('/contact') ? 'navigation-menu-active' : ''}>Contact</NavLink>
             </li>
-            {
+            {/* {
                (users === null) ?
                   ( 
                      <li>
@@ -76,7 +82,7 @@ const Navbar = () => {
                     </li>
                   </>
                   )
-            }
+            } */}
           </ul>
           <div className="app__navbar-menu">
               <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -98,7 +104,13 @@ const Navbar = () => {
                   <li>
                     <Link to="/about" onClick={() => setToggle(false)}>A propos</Link>
                   </li>
-                  {
+                  <li>
+                    <Link to="/post" className={isActiveLink('/post') ? 'navigation-menu-active' : ''}>Poster un article</Link>
+                  </li>
+                  <li>
+                    <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
+                  </li>
+                  {/* {
                (users === null) ?
                   <Outlet /> :
                   (users.status === "ADMIN") ?
@@ -133,7 +145,7 @@ const Navbar = () => {
                     </li>
                   </>
                   )
-            }
+            } */}
                   <li>
                     <Link to="/contact" onClick={() => setToggle(false)}>Contact</Link>
                   </li>

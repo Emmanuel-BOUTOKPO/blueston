@@ -106,7 +106,7 @@ const Home = () => {
               <h2> Nos réalisations </h2>
             </div>
             {
-              allPosts.length > 0 && Object.entries(allPosts[0]).slice(0, 1).map(([category, postes]) => (
+              allPosts.length > 0 ? Object.entries(allPosts[0]).slice(0, 1).map(([category, postes]) => (
 
                 <div className="row no-gutters" key={category}>
                   <div className="display-header">
@@ -143,7 +143,7 @@ const Home = () => {
                   }
 
                 </div>
-              ))
+              )) : <ZeroProduct />
             }
             <div className="btn-box">
               <Link to='/realization'>
@@ -175,7 +175,7 @@ const Home = () => {
               <div className="col-lg-4 mb-4 mt-lg-4">
                 <Link to={`/shop/Reclyclage`} className="icon-box">
                   <i className="bi bi-tools" />
-                  <h3>Reclyclage</h3>
+                  <h3>Recyclage</h3>
                   <p>
                     Sensibiliser tout le monde, y compris les individus,
                     les entreprises, les écoles, les infrastructures, etc...

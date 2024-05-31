@@ -95,35 +95,35 @@ const Detail = () => {
   window.location.reload();
   };
 
-  const handleEditComment = (commentId) => {
-    setEditingCommentId(commentId);
-    const commentToEdit = comments.find(comment => comment.id === commentId);
-    if (commentToEdit) {
-      setEditingCommentText(commentToEdit.comment);
-    }
-  };
+  // const handleEditComment = (commentId) => {
+  //   setEditingCommentId(commentId);
+  //   const commentToEdit = comments.find(comment => comment.id === commentId);
+  //   if (commentToEdit) {
+  //     setEditingCommentText(commentToEdit.comment);
+  //   }
+  // };
 
-  const handleEditCommentSubmit = () => {
-    const userId = getUserId.id;
-    if (editingCommentText.trim() || getUserId !== null) {
-      dispatch(updateComment({ id: editingCommentId, postId : params.id, userId : userId, comment: editingCommentText })).then(() => {
-        setEditingCommentId(null);
-        setEditingCommentText('');
-        dispatch(getAllComments()); // Rafraîchir les commentaires après la modification
-      });
-    }
-    window.location.reload();
-  };
+  // const handleEditCommentSubmit = () => {
+  //   const userId = getUserId.id;
+  //   if (editingCommentText.trim() || getUserId !== null) {
+  //     dispatch(updateComment({ id: editingCommentId, postId : params.id, userId : userId, comment: editingCommentText })).then(() => {
+  //       setEditingCommentId(null);
+  //       setEditingCommentText('');
+  //       dispatch(getAllComments()); // Rafraîchir les commentaires après la modification
+  //     });
+  //   }
+  //   window.location.reload();
+  // };
 
-  const handleDeleteComment = (commentId) => {
-    const confirmDelete = window.confirm("Voulez-vous vraiment supprimer ce commentaire ?");
-    if (confirmDelete) {
-     dispatch(deleteComments(commentId)).then(() => {
-        dispatch(getPosts(params.id)); 
-     });
-     window.location.reload();
-    }
-  };
+  // const handleDeleteComment = (commentId) => {
+  //   const confirmDelete = window.confirm("Voulez-vous vraiment supprimer ce commentaire ?");
+  //   if (confirmDelete) {
+  //    dispatch(deleteComments(commentId)).then(() => {
+  //       dispatch(getPosts(params.id)); 
+  //    });
+  //    window.location.reload();
+  //   }
+  // };
   return (
     <>
       <Navbar />
@@ -242,9 +242,9 @@ const Detail = () => {
                     <button className="btn btn-danger" onClick={handleDelete}>
                       <FaTrash /> Supprimer
                     </button>
-                    <button className="btn btn-secondary" onClick={() => setShowCommentInput(!showCommentInput)}>
+                    {/* <button className="btn btn-secondary" onClick={() => setShowCommentInput(!showCommentInput)}>
                       <FaComment /> Commenter
-                    </button>
+                    </button> */}
                   </div>
 
                   {showCommentInput && (
@@ -261,7 +261,7 @@ const Detail = () => {
   </div>
 )}
 
-                 {  
+                 {/* {  
                  comments.length > 0 && ( 
                   <div className="mt-4">
                     <h5>Commentaires récents :</h5>
@@ -309,7 +309,7 @@ const Detail = () => {
                       ))}
                     </ul>
                   </div>
-                 ) }     
+                 ) }      */}
         </div>
       </section>
       <Footer />

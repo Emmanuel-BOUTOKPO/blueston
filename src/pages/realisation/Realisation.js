@@ -85,7 +85,7 @@ const Realisation = () => {
         <div className="row">
       
           <div className="col-xl-12 col-lg-12 col-md-12">
-            {allCatPosts.length > 0 && Object.entries(allCatPosts[0]).slice(startIndex, endIndex).map(([category, posts]) => {
+            {allCatPosts.length > 0 ? Object.entries(allCatPosts[0]).slice(startIndex, endIndex).map(([category, posts]) => {
   
               return (
                 <div className="row no-gutters" key={category}>
@@ -121,7 +121,9 @@ const Realisation = () => {
                   )) : <ZeroProduct />}
                 </div>
               );
-            })}
+            }) : <ZeroProduct />
+            
+            }
           { 
           allCatPosts.length > 0 && <ReactPaginate
               previousLinkClassName={"prevPag"}
