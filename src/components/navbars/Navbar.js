@@ -49,8 +49,9 @@ const Navbar = () => {
                     <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
                   </li>
                   <li>
-                  <NavLink to="/post" className={isActiveLink('/post') ? 'navigation-menu-active' : ''}>Poster un article</NavLink>
-                  </li>
+                       <NavLink to="/login" className={isActiveLink('/schedule') ? 'navigation-menu-active' : ''}>S'inscrire</NavLink>
+                    </li>
+                  
             {/* {
                (users === null) ?
                   <Outlet /> :
@@ -152,6 +153,9 @@ const Navbar = () => {
                   </>
                   )
             } */}
+             <li>
+                       <Link to="/login" className={isActiveLink('/schedule') ? 'navigation-menu-active' : ''}>S'inscrire</Link>
+                    </li>
                   <li>
                     <Link to="/contact" onClick={() => setToggle(false)}>Contact</Link>
                   </li>
