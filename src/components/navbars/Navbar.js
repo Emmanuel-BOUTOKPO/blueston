@@ -48,6 +48,9 @@ const Navbar = () => {
                   <li>
                     <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
                   </li>
+                  <li>
+                  <NavLink to="/post" className={isActiveLink('/post') ? 'navigation-menu-active' : ''}>Poster un article</NavLink>
+                  </li>
             {/* {
                (users === null) ?
                   <Outlet /> :
@@ -106,6 +109,9 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link to="/post" className={isActiveLink('/post') ? 'navigation-menu-active' : ''}>Poster un article</Link>
+                  </li>
+                  <li>
+                    <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
                   </li>
                   <li>
                     <Link to="/crew" className={isActiveLink('/crew') ? 'navigation-menu-active' : ''}>Equipe</Link>
